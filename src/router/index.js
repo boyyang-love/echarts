@@ -7,7 +7,11 @@ Vue.use(VueRouter);
 
 const routes = [
   MapRouter,
-  ChinaRouter
+  ChinaRouter,
+  {
+    path:"/*",
+    redirect:"/map"
+  }
 ];
 
 const router = new VueRouter({
